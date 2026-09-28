@@ -1,0 +1,16 @@
+{
+  "name": "quietly-curious-blog",
+  "version": "1.0.0",
+  "description": "A MongoDB-backed personal blog with JSON publishing.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "node --watch main.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "mongodb": "^6.21.0"
+  }
+}

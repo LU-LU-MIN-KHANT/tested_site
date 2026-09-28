@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Publish | Quietly Curious</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="admin-page">
+    <header class="site-header"><a class="brand" href="/"><span class="brand-mark">Q</span><span>Quietly Curious</span></a><a class="header-link" href="/">View site ↗</a></header>
+    <main class="admin-shell">
+      <p class="eyebrow">Publisher desk</p>
+      <h1>Bring a new idea<br><em>into the world.</em></h1>
+      <p class="admin-intro">Paste one JSON post or a whole collection. It will be published immediately to the blog database.</p>
+      <section class="upload-panel">
+        <form id="upload-form">
+          <label class="field-label" for="json-input">Post data</label>
+          <textarea id="json-input" rows="12" required placeholder='{"title":"My first idea","body":"Write your story here...","category":"Ideas"}'></textarea>
+          <button class="primary-button" type="submit">Publish post <span>↗</span></button>
+          <p class="form-message" id="form-message" role="status"></p>
+        </form>
+      </section>
+      <section class="format-help"><p class="section-label">Accepted format</p><pre>{
+  "main header": "How to get rich",
+  "header1": "Wake up early",
+  "body1": "Your first section...",
+  "header2": "Protect your focus",
+  "body2": "Your second section..."
+}</pre><p>You can also use <code>title</code>, <code>body</code>, <code>excerpt</code>, <code>category</code>, <code>date</code>, and <code>image</code>. A ready-to-edit example is included in <code>sample-post.json</code>.</p></section>
+    </main>
+    <script src="/admin.js"></script>
+  </body>
+</html>
